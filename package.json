@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.10.2",
@@ -13,6 +14,7 @@
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.8.6",
     "@mui/styled-engine-sc": "^5.8.0",
+    "@reduxjs/toolkit": "^1.8.3",
     "@types/react-router-dom": "^5.3.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
@@ -20,6 +22,7 @@
     "styled-component": "^2.8.0"
   },
   "devDependencies": {
+    "@honkhonk/vite-plugin-svgr": "^1.1.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^14.2.1",
