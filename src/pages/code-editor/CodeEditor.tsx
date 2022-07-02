@@ -1,7 +1,7 @@
 import { styled } from '@mui/material/styles';
 import Layout from '../../components/common/layout/Layout';
-// import FileViewer from '../../components/code-editor/file-viewer/FileViewer';
-// import CodeEditorContainer from '../../components/code-editor/code-editor-container/CodeEditorContainer';
+import FileViewer from '../../components/code-editor/file-viewer/FileViewer';
+import CodeEditorContainer from '../../components/code-editor/code-editor-container/CodeEditorContainer';
 
 const CodeEditorDiv = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -33,10 +33,10 @@ const CodeEditor = () => {
     <Layout>
       <CodeEditorDiv>
         <FileViewerContainer>
-          {/* <FileViewer /> */}
+          <FileViewer />
         </FileViewerContainer>
         <CodeEditorContainerDiv>
-          {/* <CodeEditorContainer /> */}
+          <CodeEditorContainer />
         </CodeEditorContainerDiv>
       </CodeEditorDiv>
     </Layout>
