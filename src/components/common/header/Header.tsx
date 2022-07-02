@@ -7,6 +7,8 @@ import CodeEditorButton from './CodeEditorButton';
 import DarkModeSwitch from './DarkModeSwitch';
 import SignInButton from './SignInButton';
 import SignOutButton from './SignOutButton';
+// @ts-ignore
+import OpenWorkspaceButton from './OpenWorkspaceButton';
 
 const StyledLink = styled(Link)(({ theme }) => ({
   textDecoration: 'none',
@@ -44,7 +46,7 @@ const AuthenticatedButtons = () => {
 
   return (
     <AuthenticatedButtonsContainer>
-      {location.pathname === paths.home ? <CodeEditorButton /> : <h1>OpenWorkspaceButton</h1>}
+      {location.pathname === paths.home ? <CodeEditorButton /> : <OpenWorkspaceButton />}
       <SignOutButton />
     </AuthenticatedButtonsContainer>
   );
